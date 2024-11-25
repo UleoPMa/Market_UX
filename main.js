@@ -60,9 +60,9 @@ document.getElementById('pagarApple').addEventListener('click', () => {
     applePay.style.border = "3px solid #0066FF";
 });
 
-document.getElementById('pagarFinal').addEventListener('click', () => {
-    pagarCuenta();
-    ////location.reload();
+document.getElementById('pagarFinal').addEventListener('click', async () => {
+    await pagarCuenta();
+    location.reload();
 });
 
 document.getElementById('seccionDerecha').addEventListener("click", () => {

@@ -1,4 +1,4 @@
-import { collection,query,where,getDocs, orderBy, startAt, endAt, doc, documentId, count } from "firebase/firestore";
+import { collection,query,where,getDocs, orderBy, startAt, endAt, doc, documentId, count, updateDoc } from "firebase/firestore";
 import { db } from "../server";
 let total = 0;
 let addedProducts = [];
@@ -75,7 +75,7 @@ export function manageCerrar(){
 }
 
 
-export function modifyCount(product) {  
+export function modifyCount(product) { 
     const divsNotTo = document.getElementsByClassName('productoAgregado');
     Array.from(divsNotTo).forEach(div => {
         div.style.border = "none";  
@@ -129,5 +129,22 @@ export function modifyCount(product) {
 }
 
 export async function pagarCuenta() {
+    let uniqueProducts = [...new Set(addedProducts)];
 
+    const refDoc = collection(db, "productos");
+
+    for(const element of uniqueProducts) {
+        const amountBill = addedProducts.filter(num => num === element).length;
+
+        const q = query(refDoc, where("barCode", "==", element.barCode));
+
+        const querySnapshot = await getDocs(q);
+
+        if(!querySnapshot.empty) {
+            const documento = querySnapshot.docs[0];
+            const docReference = doc(db, "productos", documento.id);
+
+            await updateDoc(docReference, {stock: `${element.stock-amountBill}`});
+        }
+    };
 }
