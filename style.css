@@ -1,0 +1,362 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+html {
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.seccionSuperior {
+  width: 33%;
+  height: 7.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  color: rgb(121, 121, 121);
+}
+
+.seccionSuperior p {
+  padding: 0;
+  margin: 0;
+}
+
+#sSIzquierda {
+  justify-content: flex-start;
+}
+
+
+#sSDerecha {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#logo{
+  height: 90%;
+}
+
+#menuHamburguesa{
+  height: 50%;
+}
+
+#contenido{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 90.1vh;
+}
+
+#seccionIzquierda{
+  width: 28%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+}
+
+#descripcion{
+  display: flex;
+  background-color: rgb(230, 230, 230);
+}
+
+#cantidad{
+  width: 20%;
+}
+
+#producto{
+  width: 65%;
+}
+
+#precio{
+  width: 15%;
+}
+
+#productos{
+  display: flex;
+  flex-direction: column;
+}
+
+#productos p{
+  font-size: small;
+}
+
+#cCantidad{
+  width: 20%;
+}
+
+#cProducto{
+  width: 65%;
+}
+
+#cPrecio{
+  width: 15%;
+}
+
+#seccionDerecha{
+  width: 80%;
+}
+
+.productoAgregado {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.cantidadProducto {
+  width: 20%;
+  height: auto;
+}
+
+.nombreProducto {
+  width: 65%;
+  height: auto;
+}
+
+.precioProducto {
+  width: 15%;
+  height: auto;
+}
+
+#barraBusqueda{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+#buscar{
+  width: 40vh;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 25px;
+  margin-top: 20px;
+  position: relative;
+}
+
+#buscar img{
+  width: 8%;
+  cursor:pointer;
+  z-index: 100;
+}
+
+#busqueda{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+#resultadosBusqueda {
+  position: absolute;
+  z-index: 100;
+  top: 95.5%;
+  left: -.2%;
+  width: 100%;
+  background-color: #f0f0f0;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none; 
+}
+
+.productosS {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+}
+
+#campoBusqueda{
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+#contenidoBusqueda{
+  justify-content: center;
+  align-items: center;
+}
+
+#busquedaAvanzada {
+  display: flex;
+  justify-content:start;
+  max-width: 100%;
+}
+
+.productosAS {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15%;
+  margin-left: 50px;
+}
+
+.productosAS img {
+  height: 200px;
+}
+
+#seccionInferior {
+  z-index: 1;
+  width: 74%;
+  height: 90px;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid black;
+}
+
+#total {
+  font-size: xx-large;
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+}
+
+#pagar {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 25px;
+}
+
+#pagar div {
+  width: 45%;
+  height: 65%;
+}
+
+#botonPagar {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #0066FF;
+  font-weight: 500;
+  color: #f0f0f0;
+  font-size: x-large;
+  border: 0cap;
+}
+
+#flotantePagar{
+  display: none;
+  width: 85%;
+  height: 90vh;
+  position: absolute;
+  bottom: 5vh;
+  right:20.5%;
+  background-color: rgb(230, 230, 230);
+  border-radius: 20px;
+  border: 1px solid lightgray;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+#cerrarFlotante{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+#cerrarFlotante img{
+  width:4vh;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+#infoCompra{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: larger;
+}
+
+#infoCompra div{
+  width: 25%;
+}
+
+#cuentaItems{
+  width: 95%;
+  height: 30vh;
+  background-color: white;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+}
+
+#formaPago{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.pago{
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 30vh;
+  display: flex;
+  border: 1px solid rgb(154, 154, 154);
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgb(235, 235, 235);
+}
+
+.pago img{
+  width: 70%;
+  height: auto;
+  object-fit: contain;
+}
+
+#pagarFinal{
+  padding-top: 30px;
+}
+
+#pagarFinal button {
+  width: 40%;
+  height: 5.5vh;
+  border-radius: 10px;
+  background-color: #0066FF;
+  font-weight: 500;
+  color: #f0f0f0;
+  font-size: x-large;
+  border: 0cap;
+}
+
+#cuentaItems{
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.productosFinal{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cantidadProducto{
+  display: flex;
+  justify-content: center;
+}
