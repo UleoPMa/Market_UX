@@ -19,6 +19,97 @@ header {
   border: 1px solid black;
 }
 
+/**********************************************************************************************************************************/
+#inicioSesion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+#userId {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#userId div {
+  width: 100%;
+  margin: 8px;
+}
+
+#userId input {
+  width: 50%;
+  height: 5vh;
+  font-size: xx-large;
+}
+
+#userId button {
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #0066FF;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: x-large;
+}
+
+#inicioSesion button:hover {
+  background-color: #ffffff;
+  color: #0066FF;
+  border: 2px solid #0066FF;
+}
+
+#sesionContrasenia{
+  width: 40%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#sesionContrasenia div{
+  width: 100%;
+  margin: 8px;
+}
+
+#sesionContrasenia input {
+  width: 50%;
+  height: 5vh;
+  font-size: xx-large;
+}
+
+#sesionContrasenia button {
+  width: 40%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #0066FF;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: x-large;
+}
+
+#sesionContrasenia button:hover {
+  background-color: #ffffff;
+  color: #0066FF;
+  border: 2px solid #0066FF;
+}
+
 .seccionSuperior {
   width: 33%;
   height: 7.5vh;
@@ -71,6 +162,11 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.199);
 }
 
+.opcionMenu a {
+  text-decoration: none;
+  text-align: start;
+}
+
 .opcionMenu h2 {
   margin: 0;
   padding-top: 20px;
@@ -101,6 +197,12 @@ header {
   height: 50%;
   cursor: pointer;
   z-index: 10000;
+}
+
+#menuHamburguesa.clicked{
+  fill: #f0f0f0;
+  stroke-width: 40%;
+  stroke: #0043a85e;
 }
 
 #contenido{

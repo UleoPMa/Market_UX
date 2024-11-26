@@ -1,105 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <header>
-        <div class="seccionSuperior" id="sSIzquierda">
-            <img src="src/logo.png" alt="Logo TODO-MART" id="logo">
+    <title>TODO-MART Inicio sesión</title>
+</head>
+<body>
+    <div id="inicioSesion">
+        <div id="userId">
+            <div><h2>Introduce tu ID de Empleado:</h2></div>
+            <div><input type="password" id="id_Usuario" required></div>
+            <div><button>ENTER</button></div>
         </div>
-        <div class="seccionSuperior">
-            <p>VENTAS</p>
-        </div>
-        <div class="seccionSuperior" id="sSDerecha">
-            <img src="src/iconoMenuHambur.png" alt="Icono de Menu Hamburguesa" id="menuHamburguesa">
-            <div id="menuDezplegable">
-                <div id="superiorMenu">
-                    <div><h1>MENU</h1></div>
-                </div>
-                <div id="opcionesMenu">
-                    <div id="administracionMenu" class="opcionMenu"><h2>Administración</h2></div>
-                    <div id="ventasMenu" class="opcionMenu"><h2>Ventas</h2></div>
-                    <div id="inventarioMenu" class="opcionMenu"><h2>Gestion de Inventario</h2></div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div id="contenido">
-        <div id="seccionIzquierda">
-            <div id="descripcion">
-                <div id="cantidad">
-                    <p>Cantidad</p>
-                </div>
-                <div id="producto">
-                    <p>Producto</p>
-                </div>
-                <div id="precio">
-                    <p>Precio</p>
-                </div>
-            </div>
-            <div id="productos">
-                
-            </div>
-        </div>
-        <div id="seccionDerecha">
-            <div id="barraBusqueda">
-                <div id="buscar">
-                    <div id="busqueda">
-                        <input type="text" id="campoBusqueda" placeholder="Busca un producto..." autocomplete="off">
-                        <img src="src/search.png" alt="Buscar" id="iconoBuscar">
-                    </div>
-                    <div id="resultadosBusqueda"></div>
-                </div>
-            </div>
-            <div id="contenidoBusqueda">
-                <div id="busquedaAvanzada"></div>
-            </div>
-            <div id="seccionInferior">
-                <div id="total">
-                    <div><strong>Total: $ 0 pesos</strong></div>
-                </div>
-                <div id="flotantePagar">
-                    <div id="cerrarFlotante">
-                        <img src="src/cerrar.png" alt="cerrarVentanaPago" id="imgCerrar">
-                    </div>
-                    <div id="listaCompra">
-                        <div id="infoCompra">
-                            <div><p>Cantidad</p></div>
-                            <div><p>Producto</p></div>
-                            <div><p>Precio Unitario</p></div>
-                            <div><p>Precio Total</p></div>
-                        </div>
-                        <div id="cuentaItems">
-                        </div>
-                    </div>
-                    <div id="formaPago">
-                        <div id="pagarTarjeta" class="pago">
-                            <img src="src/tarjeta.png" alt="pagar con tarjeta">
-                        </div>
-                        <div id="pagarEfectivo" class="pago">
-                            <img src="src/efectivo.png" alt="pagar con efectivo">
-                        </div>
-                        <div id="pagarApple" class="pago">
-                            <img src="src/applePay.png" alt="pagar con apple pay">
-                        </div>
-                    </div>
-                    <div id="pagarFinal">
-                        <button>PAGAR</button>
-                    </div>
-                </div>
-                <div id="pagar">
-                    <div><button type="button" id="botonPagar">PAGAR:</button></div>
-                    </div>
-                </div>
-            </div>
+
+    <div id="sesionContrasenia">
+        <div id="sesionContra">
+            <div><h2>Introduce tu contraseña:</h2></div>
+            <div><input type="password" id="contra_Usuario" required></div>
+            <div><button>INGRESAR</button></div>
         </div>
     </div>
-
-    <script type="module" src="main.js"></script>
+</div>
+    <script type="module" src="login.js"></script>
 </body>
 </html>
