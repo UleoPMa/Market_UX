@@ -31,6 +31,7 @@ export async function login(id) {
                     
                     if(employee.password == passwordUser){
                         localStorage.setItem('employeeId', id);
+                        localStorage.setItem('isLogged',true);
                         window.location.href = "/sales.html";
                     }
                     else{

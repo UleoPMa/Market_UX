@@ -3,6 +3,16 @@ import { advancedSearch, searchInFirestore } from './components/search';
 import './components/bill';
 import { floatingCount, manageCerrar,pagarCuenta } from './components/bill';
 
+let logged = localStorage.getItem('isLogged');
+console.log(logged);
+
+if(!logged) {
+    alert("Primero debes iniciar sesión!!");
+    window.location.href = "/index.html";
+}else {
+    console.log(sessionStorage.getItem('employeeId'));
+}
+
 document.getElementById('campoBusqueda').addEventListener('input', () => {
     const searchProduct = document.getElementById('campoBusqueda').value;
     searchInFirestore(searchProduct);
