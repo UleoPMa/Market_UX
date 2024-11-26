@@ -19,7 +19,8 @@ header {
   border: 1px solid black;
 }
 
-/**********************************************************************************************************************************/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
 #inicioSesion {
   width: 100%;
   height: 80%;
@@ -108,6 +109,137 @@ header {
   background-color: #ffffff;
   color: #0066FF;
   border: 2px solid #0066FF;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+#contenidoAdmin {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  font-weight: 700;
+}
+
+#opcioneAdministracion{
+  position: relative;
+  width: 20.1%;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
+#empleados{
+  position: relative;
+  top:1px;
+  width: 50%;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+#reporteVentas{
+  width: 50%;
+  text-align: center;
+}
+
+#contenidoE{
+  display: none;
+  flex-direction: row;
+  width: 100%;
+  height: 90.1vh;
+}
+
+
+#controlesEmpleados{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+}
+
+#controlesEmpleados div{
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  width: 100%;
+  text-align: start;
+}
+
+#controlesEmpleados p{
+  text-align: start;
+}
+
+#controlesEmpleados input{
+  width: 80%;
+  height: 2.5vh;
+}
+
+#registrar{
+  align-items: end;
+}
+
+#controlesEmpleados button{
+  margin-top: 20px;
+  width: 40%;
+  height: 4vh;
+  border-radius: 7px;
+  border: 1px solid gray;
+  font-size:small;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+#controlesEmpleados button:hover{
+  color: #003380;
+  border: 2px solid #003380;
+  font-weight: 600;
+}
+
+#contenidoEmpleados{
+  width: 80%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+#contenidoEmpleados p{
+  text-align: start;
+  padding-left: 10px;
+}
+
+#contenidoEmpleados div{
+  background-color: rgb(128, 128, 128);
+  color: #ececec;
+  border: 1px solid rgb(0, 0, 0)  ;
+}
+
+#idEmpleados{
+  width: 10%;
+}
+
+#nombreEmpleados{
+  width: 40%;
+}
+
+#correoEmpleados{
+  width: 25%;
+}
+
+#telefonoEmpleados{
+  width: 25%;
+}
+
+#encabezadosEmpleados{
+  display: flex;
+  justify-content: space-between;
 }
 
 .seccionSuperior {

@@ -13,11 +13,83 @@
             <img src="src/logo.png" alt="Logo TODO-MART" id="logo">
         </div>
         <div class="seccionSuperior">
-            <p>VENTAS</p>
+            <p>ADMINISTRACIÓN</p>
         </div>
         <div class="seccionSuperior" id="sSDerecha">
-            <img src="src/iconoMenuHambur.png" alt="Icono de Menu Hamburguesa" id="menuHamburguesa">
+            <svg id="menuHamburguesa" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 226.000000 173.000000"
+                preserveAspectRatio="xMidYMid meet">
+
+                <g transform="translate(0.000000,173.000000) scale(0.100000,-0.100000)">
+                <path d="M172 1695 c-18 -8 -46 -24 -62 -35 -39 -28 -80 -117 -80 -175 0 -56
+                36 -132 81 -169 69 -59 21 -56 1020 -56 914 0 919 0 964 21 51 24 98 73 120
+                126 42 100 -8 228 -108 278 l-51 25 -925 0 c-784 -1 -931 -3 -959 -15z"/>
+                <path d="M165 1076 c-111 -51 -164 -175 -120 -279 22 -54 74 -107 123 -128 42
+                -18 87 -19 962 -19 875 0 920 1 962 19 75 32 138 122 138 199 0 92 -73 195
+                -156 220 -31 9 -265 12 -950 12 l-909 0 -50 -24z"/>
+                <path d="M173 469 c-58 -22 -112 -79 -132 -138 -32 -97 8 -204 99 -259 l55
+                -32 945 2 945 3 45 32 c56 38 100 120 100 185 0 58 -39 139 -84 173 -74 56
+                -37 54 -1016 54 -883 0 -906 -1 -957 -20z"/>
+                </g>
+            </svg>
+            <div id="menuDezplegable">
+                <div id="superiorMenu">
+                    <div><h1>MENU</h1></div>
+                </div>
+                <div id="opcionesMenu">
+                    <div id="administracionMenu" class="opcionMenu"><a href="administration.html"><h2>Administración</h2></a></div>
+                    <div id="ventasMenu" class="opcionMenu"><a href="sales.html"><h2>Ventas</h2></a></div>
+                    <div id="inventarioMenu" class="opcionMenu"><a href="inventory.html"><h2>Gestion de Inventario</h2></a></div>
+                </div>
+            </div>
         </div>
     </header>
+    <div id="contenidoAdmin">
+        <div id="opcioneAdministracion">
+            <div id="empleados"><p>Empleados</p></div>
+            <div id="reporteVentas"><p>Ventas</p></div>
+        </div>
+        <div id="contenidoE">
+            <div id="controlesEmpleados">
+                <div><h2>Alta de empleados:</h2></div>
+                <div id="ingresoNombre">
+                    <div><p>Nombre:</p></div>
+                    <div><input type="text" placeholder="Nombre completo..."></div>
+                </div>
+                <div id="ingresoEmail">
+                    <div><p>Correo electrónico:</p></div>
+                    <div><input type="text" placeholder="Correo electronico..."></div>
+                </div>
+                <div id="ingresoNumero">
+                    <div><p>Número de celular:</p></div>
+                    <div><input type="text" placeholder="Número de teléfono..."></div>
+                </div>
+                <div id="ingresoId">
+                    <div><p>Id de empleado:</p></div>
+                    <div><input type="number" placeholder="Número de teléfono..."></div>
+                </div>
+                <div id="ingresoContra">
+                    <div><p>Contraseña:</p></div>
+                    <div><input type="password" placeholder="Contraseña del empleado..."></div>
+                </div>
+                <div id="registrar">
+                    <button id="botonRegistrar">REGISTRAR</button>
+                </div>
+            </div>
+            <div id="contenidoEmpleados">
+                <div id="encabezadosEmpleados">
+                    <div id="idEmpleados"><p>ID</p></div>
+                    <div id="nombreEmpleados"><p>Nombre Completo</p></div>
+                    <div id="correoEmpleados"><p>Correo</p></div>
+                    <div id="telefonoEmpleados"><p>Telefono</p></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="contenidoV">
+            
+        </div>
+    </div>
+    <script type="module" src="admin.js"></script>
 </body>
 </html>
