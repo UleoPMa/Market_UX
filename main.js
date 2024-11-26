@@ -82,4 +82,10 @@ document.getElementById('seccionDerecha').addEventListener("click", () => {
     })
 });
 
+document.getElementById("menuHamburguesa").addEventListener('click', () => {
+    const sideBar = document.getElementById('menuDezplegable');
+    sideBar.classList.toggle('active');
+    console.log("Aplicado")
+});
+
 console.log("App inicada correctamente");
